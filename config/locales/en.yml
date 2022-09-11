@@ -30,4 +30,29 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  view_name_index:
+    index:
+      title: "Books"
+  view_name_new:
+    new:
+      title: "New creation screen"
+  view_name_edit:
+    edit:
+      title: "Editing screen"
+
+  dictionary:
+    show: "Show"
+    edit: "Edit"
+    destroy: "Destroy"
+    create: "Add book"
+    back: "back"
+
+  activerecord:
+    models:
+      model_name_book: "book"
+    attributes:
+      model_name_book:
+        title: "Title"
+        memo: "Memo"
+        author: "Author"
+        picture: "Picture"
