@@ -1,7 +1,7 @@
 ja:
   view_name_index:
     index:
-      title: "本の一覧"
+      title: "書籍の一覧"
   view_name_new:
     new:
       title: "新規作成画面"
@@ -13,14 +13,14 @@ ja:
     show: "詳細"
     edit: "編集"
     destroy: "削除"
-    create: "本を追加"
+    create: "書籍を追加"
     back: "戻る"
 
   activerecord:
     models:
-      model_name_book: "本"
+      book: "書籍"
     attributes:
-      model_name_book:
+      book:
         title: "題名"
         memo: "メモ"
         author: "著者"

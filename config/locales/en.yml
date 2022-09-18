@@ -49,9 +49,9 @@ en:
 
   activerecord:
     models:
-      model_name_book: "book"
+      book: "book"
     attributes:
-      model_name_book:
+      book:
         title: "Title"
         memo: "Memo"
         author: "Author"
