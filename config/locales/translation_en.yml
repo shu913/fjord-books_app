@@ -9,9 +9,3 @@ en:
         memo: Memo  #g
         picture: Picture  #g
         title: Title  #g
-  views:
-    pagination:
-      next: Next
-      last: Last
-      first: First
-      previous: Previous
