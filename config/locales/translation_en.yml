@@ -1,7 +1,15 @@
 en:
+  dictionary:
+    userlist: Userlist
+    userdetails: DetailsUser
+    booklist: Booklist
+    editprofile: EditUser
+    logout: Logout
+    back: Back
   activerecord:
     models:
       book: Book  #g
+      user: User
 
     attributes:
       book:
@@ -9,3 +17,12 @@ en:
         memo: Memo  #g
         picture: Picture  #g
         title: Title  #g
+      user:
+        name: Name
+        email: Email
+        postcode: Postcode
+        prefecture: Prefecture
+        address_city: Address_city
+        address_street: Address_street
+        address_building: Address_building
+        profile: Profile
