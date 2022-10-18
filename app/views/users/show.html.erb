@@ -1,12 +1,7 @@
-<h1><%= t('dictionary.userdetails') %></h1>
+<h1><%= t('.userdetails') %></h1>
 
-<p><%= User.human_attribute_name(:name) %>: <%= @user.name %></p>
-<p><%= User.human_attribute_name(:email) %>: <%= @user.email %></p>
-<p><%= User.human_attribute_name(:postcode) %>: <%= @user.postcode %></p>
-<p><%= User.human_attribute_name(:prefecture) %>: <%= @user.prefecture %></p>
-<p><%= User.human_attribute_name(:address_city) %>: <%= @user.address_city %></p>
-<p><%= User.human_attribute_name(:address_street) %>: <%= @user.address_street %></p>
-<p><%= User.human_attribute_name(:address_building) %>: <%= @user.address_building %></p>
-<p><%= User.human_attribute_name(:profile) %>: <%= @user.profile %></p>
+<% %i[name email postcode prefecture address_city address_street address_building profile].each do |attr| %>
+  <p><%= User.human_attribute_name(attr) %>: <%= @user.send(attr) %></p>
+<% end %>
 
 <%= link_to t('views.common.back'), users_index_path %>

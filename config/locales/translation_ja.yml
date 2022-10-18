@@ -1,11 +1,20 @@
 ja:
+  books:
+    index:
+      userlist: ユーザー一覧
+      editprofile: ユーザー情報を編集
+
+  users:
+    index:
+      userlist: ユーザー一覧
+      booklist: 本の一覧
+    show:
+      userdetails: ユーザー詳細
+
   dictionary:
-    userlist: ユーザー一覧
-    userdetails: ユーザー詳細
-    booklist: 本の一覧
-    editprofile: ユーザー情報を編集
     logout: ログアウト
     back: 戻る
+
   activerecord:
     models:
       book: 本  #g

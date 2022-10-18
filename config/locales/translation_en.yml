@@ -1,11 +1,20 @@
 en:
+  books:
+    index:
+      userlist: Userlist
+      editprofile: EditUser
+
+  users:
+    index:
+      userlist: Userlist
+      booklist: Booklist
+    show:
+      userdetails: DetailsUser
+
   dictionary:
-    userlist: Userlist
-    userdetails: DetailsUser
-    booklist: Booklist
-    editprofile: EditUser
     logout: Logout
     back: Back
+
   activerecord:
     models:
       book: Book  #g

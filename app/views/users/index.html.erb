@@ -1,5 +1,5 @@
-<p><%= link_to "#{t('dictionary.booklist')}", books_path %></p>
-<h1><%= t('dictionary.userlist') %></h1>
+<p><%= link_to t('.booklist'), books_path %></p>
+<h1><%= t('.userlist') %></h1>
 <ul class="users">
   <% @users.each do |user| %>
     <li>
