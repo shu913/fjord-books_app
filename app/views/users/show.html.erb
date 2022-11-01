@@ -1,0 +1,7 @@
+<h1><%= t('.userdetails') %></h1>
+
+<% %i[name email postcode prefecture address_city address_street address_building profile].each do |attr| %>
+  <p><%= User.human_attribute_name(attr) %>: <%= @user.send(attr) %></p>
+<% end %>
+
+<%= link_to t('views.common.back'), users_index_path %>
