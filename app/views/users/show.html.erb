@@ -34,7 +34,7 @@
 </p>
 
 <% if @user != current_user %>
-  <% if current_user.following?(@user) %>
+  <% if current_user.followings?(@user) %>
     <%= button_to 'フォロー解除', follow_path(@user), method: :delete %>
   <% else %>
     <%= button_to 'フォロー', follows_path(@user), method: :post %>

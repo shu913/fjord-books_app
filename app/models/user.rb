@@ -13,15 +13,14 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_follows, source: :follower
 
   def follow(user_id)
-    active_follows.create!(followed_id: user_id)
+    active_follows.create(followed_id: user_id)
   end
 
   def unfollow(user_id)
-    follow = active_follows.find_by(followed_id: user_id)
-    follow.destroy if follow
+    active_follows.find_by(followed_id: user_id).destroy
   end
 
-  def following?(user)
+  def followings?(user)
     followings.include?(user)
   end
 end
