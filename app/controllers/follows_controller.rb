@@ -1,7 +1,6 @@
 class FollowsController < ApplicationController
   def create
-    @user = current_user.follow(params[:id])
-    if @user.save
+    if current_user.follow(params[:id])
       redirect_to user_path, notice: 'ユーザーのフォローに成功しました。'
     else
       redirect_to user_path, alert: 'ユーザーのフォローに失敗しました。'
@@ -9,8 +8,7 @@ class FollowsController < ApplicationController
   end
 
   def destroy
-    @user = current_user.unfollow(params[:id])
-    if @user
+    if current_user.unfollow(params[:id])
       redirect_to user_path, notice: 'ユーザーのフォロー解除に成功しました。'
     else
       redirect_to user_path, alert: 'ユーザーのフォロー解除に失敗しました。'

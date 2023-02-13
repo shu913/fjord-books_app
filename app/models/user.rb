@@ -13,7 +13,8 @@ class User < ApplicationRecord
   has_many :followers, through: :passive_follows, source: :follower
 
   def follow(user_id)
-    active_follows.create(followed_id: user_id)
+    active_follow = active_follows.new(followed_id: user_id)
+    active_follow.save
   end
 
   def unfollow(user_id)
