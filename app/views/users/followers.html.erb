@@ -1,0 +1,13 @@
+<h2>フォロワー一覧</h2>
+
+<% if @users.present? %>
+  <% @users.each do |user| %>
+    <%= user.name %>
+  <% end %>
+<% else %>
+  <%= "#{@user.name} をフォローしているユーザーはいません" %>
+<% end %>
+
+<br />
+
+<%= link_to t('views.common.back'), user_path %>
